@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumar Brothers Khad Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <p class="proprietor">Proprietor: Sanjay Kumar</p>
+            <div class="store-info">
+                <h1>Kumar Brothers Khad Store</h1>
+                <h3>Main Road Saidabad, Jehanabad</h3>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>Welcome to Kumar Brothers Khad Store</h2>
+        <p>Your one-stop shop for all types of fertilizers.</p>
+    </section>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product" id="product1">
+            <h3>Urea Fertilizer</h3>
+            <img src="UREA.jpg" alt="Urea Fertilizer">
+            <p>Price: ₹320</p>
+            <button onclick="addToCart('Urea Fertilizer', 320)">Add to Cart</button>
+        </div>
+        <div class="product" id="product2">
+            <h3>Potash Fertilizer</h3>
+            <img src="sulphate.jpg" alt="Potash Fertilizer">
+            <p>Price: ₹825</p>
+            <button onclick="addToCart('Potash Fertilizer', 825)">Add to Cart</button>
+        </div>
+        <div class="product" id="product3">
+            <h3>Phosphate Fertilizer</h3>
+            <img src="PHOSPHATE.jpg" alt="Phosphate Fertilizer">
+            <p>Price: ₹630</p>
+            <button onclick="addToCart('Phosphate Fertilizer', 630)">Add to Cart</button>
+        </div>
+        <div class="product" id="product4">
+            <h3>D.A.P Fertilizer</h3>
+            <img src="DAP.jpg" alt="D.A.P Fertilizer">
+            <p>Price: ₹1500</p>
+            <button onclick="addToCart('D.A.P Fertilizer', 1500)">Add to Cart</button>
+        </div>
+    </section>
+    <section id="order">
+        <h2>Your Order</h2>
+        <div id="customer-details">
+            <label for="cname">Name:</label>
+            <input type="text" id="cname" name="cname" required><br>
+            <label for="caddress">Address:</label>
+            <input type="text" id="caddress" name="caddress" required><br>
+            <label for="cphone">Phone:</label>
+            <input type="text" id="cphone" name="cphone" required><br>
+        </div>
+        <ul id="cart"></ul>
+        <p>Total: ₹<span id="total">0</span></p>
+        <button onclick="submitOrder()">Place Order</button>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: sanjaykumarkb88@gmail.com</p>
+        <p>Phone: +91-8804594507</p>
+    </section>
+    <footer>
+        <!-- <p>&copy; 2024 Kumar Brothers Khad Store</p> -->
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
